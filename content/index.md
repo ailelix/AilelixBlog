@@ -17,3 +17,8 @@ Bonjour!
 2. 本站使用Google Fonts CDN，在特定网络情况下可能显示效果不佳
 3. 虽然是我自己的博客，但是叠个甲先 `请妥善使用Giscus评论`
 4. 所有文章均遵循[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)协议，请妥善转载或引用
+
+%%Cloudflare %%
+<!-- Cloudflare Web Analytics -->
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2292a69122384aa2884eec73d6b57e3f"}'></script>
+<!-- End Cloudflare Web Analytics -->

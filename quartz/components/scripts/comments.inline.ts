@@ -13,7 +13,7 @@ const changeTheme = (e: CustomEventMap["themechange"]) => {
     {
       giscus: {
         setConfig: {
-          theme: theme,
+          theme: "noborder_" + theme,
         },
       },
     },
@@ -57,7 +57,7 @@ document.addEventListener("nav", () => {
 
   const theme = document.documentElement.getAttribute("saved-theme")
   if (theme) {
-    giscusScript.setAttribute("data-theme", theme)
+    giscusScript.setAttribute("data-theme", "noborder_" + theme)
   }
 
   giscusContainer.appendChild(giscusScript)
