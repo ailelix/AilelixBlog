@@ -5,11 +5,26 @@ import * as Component from "./quartz/components"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [],
+  afterBody: [
+    Component.Comments({
+      provider: 'giscus',
+      options: {
+        repo: 'ailelix/AilelixBlog',
+        repoId: 'R_kgDOM5vYZQ',
+        category: 'Announcements',
+        categoryId: 'DIC_kwDOM5vYZc4Ci8zk',
+        lightTheme: 'noborder_light',
+        darkTheme: 'noborder_dark',
+        themeUrl: 'https://giscus.app/themes/'
+      }
+    })
+  ],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/jackyzha0/quartz",
-      "Discord Community": "https://discord.gg/cRFFHYye7t",
+      "CC BY-NC-SA 4.0": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "Github": "https://github.com/ccxxvv77",
+      "X": "https://x.com/Ailllelllix",
+      "友情链接": "https://blog.ailelix.com/friendlinks"
     },
   }),
 }
@@ -21,18 +36,28 @@ export const defaultContentPageLayout: PageLayout = {
     Component.ArticleTitle(),
     Component.ContentMeta(),
     Component.TagList(),
+    Component.MobileOnly(Component.TableOfContents())
   ],
   left: [
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
     Component.Darkmode(),
-    Component.Explorer(),
+    Component.DesktopOnly(Component.Explorer({
+      filterFn: (node) => {
+        const omit = new Set(["friendlinks"])
+        return !omit.has(node.name.toLowerCase())
+      } // Filter out firendlinks.md in Explorer
+    }))
   ],
   right: [
-    Component.Graph(),
-    Component.DesktopOnly(Component.TableOfContents()),
-    Component.Backlinks(),
+    Component.MobileOnly(Component.Explorer({
+      filterFn: (node) => {
+        const omit = new Set(["friendlinks"])
+        return !omit.has(node.name.toLowerCase())
+      } // Same as above
+    })),
+    Component.DesktopOnly(Component.TableOfContents())
   ],
 }
 
@@ -44,7 +69,7 @@ export const defaultListPageLayout: PageLayout = {
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
     Component.Darkmode(),
-    Component.Explorer(),
+    Component.DesktopOnly(Component.Explorer()),
   ],
   right: [],
 }
