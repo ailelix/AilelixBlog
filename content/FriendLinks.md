@@ -1,6 +1,8 @@
 ---
 title: 友情链接
 aliases: friendlinks
+tags:
+- HIDE
 ---
 
 排名不分先后

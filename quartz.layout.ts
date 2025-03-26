@@ -48,16 +48,14 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Darkmode(),
     Component.DesktopOnly(Component.Explorer({
       filterFn: (node) => {
-        const omit = new Set(["friendlinks"])
-        return !omit.has(node.name.toLowerCase())
-      } // Filter out firendlinks.md in Explorer
+        return node.data?.tags?.includes("HIDE") !== true
+      } // Filter out pages with "HIDE" tags in Explorer
     }))
   ],
   right: [
     Component.MobileOnly(Component.Explorer({
       filterFn: (node) => {
-        const omit = new Set(["friendlinks"])
-        return !omit.has(node.name.toLowerCase())
+        return node.data?.tags?.includes("HIDE") !== true
       } // Same as above
     })),
     Component.DesktopOnly(Component.TableOfContents())
