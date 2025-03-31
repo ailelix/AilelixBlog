@@ -199,3 +199,58 @@ build完删除`node_modules`那种的
 > `Kubernetes` + `MiniIO` + `Gitea` + `Selfhost CICD`
 
 敬请期待
+
+# 后日谈
+Github这个Webhook目前还是超时限制为10s
+有时候仅仅是`npx quartz build`也会超时
+相关issue在[这里](https://github.com/orgs/community/discussions/24804)，截止25年三月仍然无法改变时限
+所以我稍微修改了一下代码，让编译任务异步运行
+缺点是编译失败无法反馈到Webhook
+```python
+from flask import Flask, request, jsonify
+import subprocess
+import hmac
+import hashlib
+import threading
+
+# Configuration
+HOST = "127.0.0.1"
+PORT = 25080
+DEBUG = True
+REPO_PATH = "/www/Quartz/AilelixBlog"
+BUILD_COMMAND = "npx quartz build"
+GITHUB_SECRET = ""
+
+app = Flask(__name__)
+
+def VerifySignature(payload, signature):
+    mac = hmac.new(GITHUB_SECRET.encode(), payload, hashlib.sha256).hexdigest()
+    return hmac.compare_digest("sha256=" + mac, signature)
+
+def ExecuteTask():
+    try:
+        subprocess.run(["git", "-C", REPO_PATH, "pull"], check=True)
+        subprocess.run("rm -r ./node_modules", shell=True, cwd=REPO_PATH, check=True)
+        subprocess.run("npm install", shell=True, cwd=REPO_PATH, check=True)
+        subprocess.run(BUILD_COMMAND, shell=True, cwd=REPO_PATH, check=True)
+    except subprocess.CalledProcessError as e:
+        print(f"Error: {e}")
+
+@app.route("/webhook", methods=["POST"])
+def webhook():
+
+    Signature = request.headers.get("X-Hub-Signature-256")
+    if GITHUB_SECRET and not VerifySignature(request.get_data(), Signature):
+        return "Unauthorized", 403
+
+    Data = request.json
+    if Data.get("ref") != "refs/heads/v4":
+        return "Not main(v4) branch, ignoring", 200
+
+    threading.Thread(target=ExecuteTask).start()
+    return jsonify({"message": "Starting building"}), 200
+
+# Start the App
+if __name__ == "__main__":
+    app.run(host=HOST, port=PORT, debug=DEBUG)
+```
