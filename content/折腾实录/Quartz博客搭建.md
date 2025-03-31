@@ -184,8 +184,9 @@ URL填反代后的 类型是`application/json`
 上文中的`webhook.py`
 我本来想写成每次都重装一遍依赖
 build完删除`node_modules`那种的
-然而时间太久 `Github`收不到回复会认为超时
+然而时间太久 `Github`10s内收不到回复会认为超时
 所以只有`git pull`和`npx quartz build`两行
+当然 你也可以先Respond再执行代码
 
 主播主播 你的方案确实优雅
 有没有更吃操作的方案呢？
