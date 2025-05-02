@@ -9,8 +9,10 @@ tags:
 
 - [Paxui](https://www.paxui4019.xyz/)
 
-- [Woshiluo](https://woshiluo.com/)
+- [Woshiluo](https://blog.woshiluo.com/)
 
 - [Kirisame Lonnet](https://blog.lonnet.uk/)
 
-- [Crucis](https://blog.crucis.xyz)
+- [Crucis](https://blog.crucis.xyz/)
+
+- [Pujeromir](https://blog.pujeromir.xyz/)
