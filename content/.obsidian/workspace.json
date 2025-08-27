@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "折腾实录/一加7TP刷Kali.md",
+                "file": "随笔杂记/留学番外：英国城市图鉴.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "一加7TP刷Kali"
+              "title": "留学番外：英国城市图鉴"
             },
             "group": "bbb675d47c8908b8"
           }
@@ -34,12 +34,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "折腾实录/一加7TP刷Kali.md",
+                "file": "随笔杂记/留学番外：英国城市图鉴.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "一加7TP刷Kali"
+              "title": "留学番外：英国城市图鉴"
             },
             "group": "bbb675d47c8908b8"
           }
@@ -98,13 +98,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "折腾实录/一加7TP刷Kali.md",
+                "file": "随笔杂记/留学番外：英国城市图鉴.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 一加7TP刷Kali"
+              "title": "Outline of 留学番外：英国城市图鉴"
             },
             "group": "bbb675d47c8908b8"
           }
@@ -165,6 +165,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "command-palette:Open command palette": false,
       "templater-obsidian:Templater": false
@@ -172,9 +173,9 @@
   },
   "active": "20bf121ea1d36fb5",
   "lastOpenFiles": [
+    "折腾实录/一加7TP刷Kali.md",
     "折腾实录/Quartz博客搭建.md",
     "折腾实录/Linux软路由搭建.md",
-    "折腾实录/一加7TP刷Kali.md",
     "随笔杂记/留学其一：习于孤独.md",
     "FriendLinks.md",
     "index.md",
