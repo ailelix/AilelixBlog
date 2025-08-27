@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "随笔杂记/留学番外：英国城市图鉴.md",
+                "file": "折腾实录/Linux软路由搭建.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "留学番外：英国城市图鉴"
+              "title": "Linux软路由搭建"
             },
             "group": "bbb675d47c8908b8"
           }
@@ -34,12 +34,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "随笔杂记/留学番外：英国城市图鉴.md",
+                "file": "折腾实录/Linux软路由搭建.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "留学番外：英国城市图鉴"
+              "title": "Linux软路由搭建"
             },
             "group": "bbb675d47c8908b8"
           }
@@ -98,13 +98,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "随笔杂记/留学番外：英国城市图鉴.md",
+                "file": "折腾实录/Linux软路由搭建.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 留学番外：英国城市图鉴"
+              "title": "Outline of Linux软路由搭建"
             },
             "group": "bbb675d47c8908b8"
           }
@@ -171,10 +171,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "20bf121ea1d36fb5",
+  "active": "cf831cd21a35ba03",
   "lastOpenFiles": [
     "折腾实录/一加7TP刷Kali.md",
     "折腾实录/Quartz博客搭建.md",
+    "随笔杂记/留学其五：人生始终.md",
+    "随笔杂记/留学番外：英国城市图鉴.md",
     "折腾实录/Linux软路由搭建.md",
     "随笔杂记/留学其一：习于孤独.md",
     "FriendLinks.md",
@@ -184,7 +186,6 @@
     "随笔杂记/留学其五：聊点别的.md",
     "随笔杂记/留学其四：不想坠落.md",
     "随笔杂记/留学：前言.md",
-    "随笔杂记/留学番外：英国城市图鉴.md",
     "随笔杂记/留学其二：诉诸麦芽.md",
     "随笔杂记/index.md",
     "折腾实录",
