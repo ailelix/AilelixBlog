@@ -13,6 +13,4 @@ tags:
 
 - [Kirisame Lonnet](https://blog.lonnet.uk/)
 
-- [Crucis](https://blog.crucis.xyz/)
-
 - [Pujeromir](https://blog.pujeromir.xyz/)
