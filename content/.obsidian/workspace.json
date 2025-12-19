@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "留英杂记/INTO一年/5. 匆匆一年.md",
+                "file": "留英杂记/曼大生活/Y1.0 万事开头难.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "5. 匆匆一年"
+              "title": "Y1.0 万事开头难"
             },
             "group": "bbb675d47c8908b8"
           }
@@ -34,12 +34,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "留英杂记/INTO一年/5. 匆匆一年.md",
+                "file": "留英杂记/曼大生活/Y1.0 万事开头难.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "5. 匆匆一年"
+              "title": "Y1.0 万事开头难"
             },
             "group": "bbb675d47c8908b8"
           }
@@ -85,6 +85,16 @@
               "icon": "lucide-search",
               "title": "搜索"
             }
+          },
+          {
+            "id": "a56a23d361e296f7",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
           }
         ]
       },
@@ -98,13 +108,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "留英杂记/INTO一年/5. 匆匆一年.md",
+                "file": "留英杂记/曼大生活/Y1.0 万事开头难.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 5. 匆匆一年"
+              "title": "Outline of Y1.0 万事开头难"
             },
             "group": "bbb675d47c8908b8"
           }
@@ -154,6 +164,21 @@
               "icon": "links-going-out",
               "title": "留学其一：习于孤独 的出链列表"
             }
+          },
+          {
+            "id": "0784c7bb760eff84",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
           }
         ],
         "currentTab": 1
@@ -165,6 +190,10 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
       "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "command-palette:Open command palette": false,
@@ -173,16 +202,20 @@
   },
   "active": "20bf121ea1d36fb5",
   "lastOpenFiles": [
-    "留英杂记/INTO一年/4. 不想坠落.md",
-    "留英杂记/INTO一年/3. 还乡新感.md",
+    "留英杂记/INTO一年/5. 匆匆一年.md",
+    "留英杂记/曼大生活/Y1.0 万事开头难.md",
+    "留英杂记/INTO一年/0. 前言.md",
     "留英杂记/INTO一年/2. 麦芽节庆.md",
     "留英杂记/INTO一年/1. 习于孤独.md",
-    "留英杂记/INTO一年/0. 前言.md",
+    "瞎说杂谈/性压抑.md",
+    "留英杂记/曼大生活",
+    "瞎说杂谈",
+    "留英杂记/INTO一年/4. 不想坠落.md",
+    "留英杂记/INTO一年/3. 还乡新感.md",
     "留英杂记/英国城市图鉴.md",
     "折腾实录/一加7TP刷Kali.md",
     "折腾实录/Quartz博客搭建.md",
     "折腾实录/Linux软路由搭建.md",
-    "留英杂记/INTO一年/5. 匆匆一年.md",
     "FriendLinks.md",
     "index.md",
     "留英杂记/INTO一年",
