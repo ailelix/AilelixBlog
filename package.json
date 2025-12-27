@@ -61,6 +61,8 @@
     "mdast-util-to-string": "^4.0.0",
     "micromorph": "^0.4.5",
     "minimatch": "^10.1.1",
+    "node-addon-api": "^8.5.0",
+    "node-gyp": "^12.1.0",
     "pixi.js": "^8.14.3",
     "preact": "^10.28.0",
     "preact-render-to-string": "^6.6.3",
