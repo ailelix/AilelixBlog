@@ -24,7 +24,7 @@ export const sharedPageComponents: SharedLayout = {
       "CC BY-NC-SA 4.0": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
       "Github": "https://github.com/ailelix",
       "X": "https://x.com/Ailllelllix",
-      "友情链接": "https://blog.ailelix.com/friendlinks"
+      "友情链接": "https://blog.felixchen.uk/friendlinks"
     },
   }),
 }
