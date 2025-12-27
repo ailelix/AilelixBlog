@@ -16,7 +16,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "zh-CN",
-    baseUrl: "blog.ailelix.com",
+    baseUrl: "blog.felixchen.uk",
     ignorePatterns: ["private", "templates", ".obsidian", ".trash",],
     defaultDateType: "created",
     generateSocialImages: true,
