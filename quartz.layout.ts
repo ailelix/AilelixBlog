@@ -24,7 +24,6 @@ export const sharedPageComponents: SharedLayout = {
       "CC BY-NC-SA 4.0": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
       "Github": "https://github.com/ailelix",
       "X": "https://x.com/Ailllelllix",
-      "友情链接": "https://blog.felixchen.uk/friendlinks"
     },
   }),
 }
@@ -46,18 +45,10 @@ export const defaultContentPageLayout: PageLayout = {
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
     Component.Darkmode(),
-    Component.DesktopOnly(Component.Explorer({
-      filterFn: (node) => {
-        return node.data?.tags?.includes("HIDE") !== true
-      } // Filter out pages with "HIDE" tags in Explorer
-    }))
+    Component.DesktopOnly(Component.Explorer())
   ],
   right: [
-    Component.MobileOnly(Component.Explorer({
-      filterFn: (node) => {
-        return node.data?.tags?.includes("HIDE") !== true
-      } // Same as above
-    })),
+    Component.MobileOnly(Component.Explorer()),
     Component.DesktopOnly(Component.TableOfContents())
   ],
 }
